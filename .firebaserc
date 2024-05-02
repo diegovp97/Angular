@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-app-f339b": {
+      "hosting": {
+        "app-test": [
+          "angular-app-f339b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-app-f339b"
+  }
+}

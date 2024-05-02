@@ -1,0 +1,11 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" (ngSubmit)="onLogin()">
+      <input type="email" [(ngModel)]="loginObj.email" name="email" placeholder="email" required/>
+      <input type="password" [(ngModel)]="loginObj.password" name="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,}"/>
+      <button type="submit">login</button>
+      <p class="message">Not registered? <a routerLink="/register">Create an account</a></p>
+      <p class="message">Forgot your password?<a (click)="resetPassword(loginObj.email)">Reset password</a></p>
+    </form>
+  </div>
+</div>
