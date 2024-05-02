@@ -1,0 +1,31 @@
+<h1>Bienvenido, {{userName}}</h1>
+
+<form #createQuestionnaireform = "ngForm" (ngsubmit)="submitForm()">
+  <div>
+    <label for="pregunta1">Pregunta 1:</label>
+    <p>¿Cual es tu color favorito?</p>
+    <label><input type="radio" name="color" value="rojo" ngModel> Rojo</label>
+    <label><input type="radio" name="color" value="verde" ngModel> Verde</label>
+    <label><input type="radio" name="color" value="azul" ngModel> Azul</label>
+  </div>
+
+  <div>
+    <label for="pregunta2">Pregunta 2:</label>
+    <p>¿Cual es tu animal favorito?</p>
+    <label><input type="radio" name="animal" value="perro" ngModel> Perro</label>
+    <label><input type="radio" name="animal" value="gato" ngModel> Gato</label>
+    <label><input type="radio" name="animal" value="pez" ngModel> Pez</label>
+  </div>
+
+  <div>
+    <label for="pregunta3">Pregunta 3:</label>
+    <p>¿Cual es tu comida favorita?</p>
+    <label><input type="radio" name="comida" value="pizza" ngModel> Pizza</label>
+    <label><input type="radio" name="comida" value="hamburguesa" ngModel> Hamburguesa</label>
+    <label><input type="radio" name="comida" value="ensalada" ngModel> Ensalada</label>
+  </div>
+
+  <div>
+    <button (click)="submitForm()">Enviar datos</button>
+  </div>
+</form>

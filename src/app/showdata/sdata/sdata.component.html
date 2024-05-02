@@ -1,0 +1,9 @@
+<section>
+  <h1>Data for Logged-In User</h1>
+  <ul>
+    <li *ngFor="let item of data$ | async">
+      {{ item.data}} <!-- Asegúrate de que 'dataField' es un campo en tus documentos Firestore -->
+    </li>
+  </ul>
+</section>
+<button (click)="authService.logout()">Logout</button>
